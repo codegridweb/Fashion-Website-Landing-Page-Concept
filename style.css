@@ -1,0 +1,288 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      font-family: Poppins;
+}
+
+.s-one {
+      position: absolute;
+      width: 1px;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.2);
+      left: 25%;
+}
+
+.s-two {
+      position: absolute;
+      width: 1px;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.2);
+      left: 50%;
+}
+
+.s-three {
+      position: absolute;
+      width: 1px;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.2);
+      left: 75%;
+}
+
+.top-bar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+}
+
+.top-bar ul li {
+      list-style: none;
+      line-height: 46px;
+      padding: 16px 32px;
+      margin: 0 16px;
+}
+
+.menu-btn {
+      position: fixed;
+      right: 20px;
+      padding: 16px 0 0 0;
+      width: 40px;
+      height: 40px;
+}
+
+.one, .two {
+      position: absolute;
+      background: #000;
+      width: 30px;
+      height: 2px;
+}
+
+.two {
+      margin-top: 12px;
+}
+
+.account {
+      position: fixed;
+      left: 40px;
+}
+
+.acocunt span {
+      margin-left: 8px;
+}
+
+.logo {
+      position: fixed;
+      left: 180px;
+      font-family: "Charm";
+      font-weight: bolder;
+      font-size: 20px;
+}
+
+.search {
+      position: fixed;
+      right: 160px;
+}
+
+.contact {
+      padding: 10px 30px;
+      position: fixed;
+      left: -20px;
+      top: 180px;
+      transform: rotate(-90deg);
+}
+
+.tag {
+      position: fixed;
+      top: 166px;
+      left: 152px;
+      padding: 10px 30px;
+}
+
+.year {
+      position: fixed;
+      top: 556px;
+      left: 152px;
+      padding: 10px 30px;
+}
+
+.arrow-left {
+      position: fixed;
+      top: 686px;
+      left: 42px;
+      padding: 10px 30px;
+}
+
+.arrow-right {
+      position: fixed;
+      top: 686px;
+      left: 132px;
+      padding: 10px 30px;
+}
+
+.add {
+      position: fixed;
+      top: 556px;
+      left: 382px;
+      font-size: 20px;
+      padding: 10px 30px;
+}
+
+.img img {
+      width: 46%;
+}
+
+.img {
+      position: fixed;
+      z-index: 0;
+      top: 24.6%;
+      left: 38%;
+}
+
+.title {
+      position: fixed;
+      font-size: 62px;
+      position: absolute;
+      top: 276px;
+      left: 862px;
+      font-family: "Charm";
+}
+
+.line {
+      position: fixed;
+      left: 360px;
+      top: 200px;
+      background: #000;
+      width: 180px;
+      height: 1px;
+}
+
+.e-shop {
+      padding: 10px 30px;
+      position: fixed;
+      left: 1020px;
+      top: 180px;
+      transform: rotate(90deg);
+}
+
+.tag-line {
+      position: fixed;
+      top: 490px;
+      left: 692px;
+      padding: 10px 30px;
+      color: grey;
+}
+
+.media ul {
+      list-style: none;
+      position: fixed;
+      right: 20px;
+      top: 70%;
+      padding: 10px 10px;
+}
+
+.media ul li {
+      font-size: 18px;
+      margin: 24px 0;
+}
+
+/* animations */
+
+.title span {
+      opacity: 0;
+      animation: appear-text 0.0001s linear forwards;
+      animation-delay: 2s;
+}
+
+.title:after {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background: #000;
+      position: absolute;
+      animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      animation-delay: 1.4s;
+}
+
+.tag-line span {
+      opacity: 0;
+      animation: appear-text 0.0001s linear forwards;
+      animation-delay: 2.2s;
+}
+
+.tag-line:after {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background: #000;
+      position: absolute;
+      animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      animation-delay: 1.8s;
+}
+
+@keyframes rev-block {
+      0% {
+            left: 0%;
+            width: 0%;
+      }
+
+      50% {
+            left: 0;
+            width: 100%;
+      }
+
+      100% {
+            left: 100%;
+            width: 0%;
+      }
+}
+
+@keyframes appear-text {
+      0% {
+            opacity: 0;
+      }
+
+      100% {
+            opacity: 1;
+      }
+}
+
+img {
+      opacity: 0;
+      animation: appear-text 1s linear forwards;
+      animation-delay: 1.4s;
+}
+
+.img:after {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background: #b68c70;
+      position: absolute;
+      animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      animation-delay: 1s;
+}
+
+@keyframes rev-img {
+      0% {
+            left: 0%;
+            width: 0%;
+      }
+
+      50% {
+            left: 0;
+            width: 46%;
+      }
+
+      100% {
+            left: 46%;
+            width: 0%;
+      }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Fashion Store Landing Page Concept</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Charm:700" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+<body>
+
+      <div class="container">
+
+            <div class="strips">
+                  <div class="s-one"></div>
+                  <div class="s-two"></div>
+                  <div class="s-three"></div>
+            </div>
+
+            <div class="top-bar">
+
+            <ul>
+
+                  <li>
+                        <div class="account">
+                              <i class="fa fa-user"></i>
+                              <span>Account</span>
+                        </div>
+                  </li>
+
+                  <li>
+                        <div class="logo">
+                              <span>regel black</span>
+                        </div>
+                  </li>
+
+                  <li>
+                        <div class="search">
+                              <i class="fa fa-search"></i>
+                        </div>
+                  </li>
+
+                  <li>
+                        <div class="menu-btn">
+                              <span class="one"></span>
+                              <span class="two"></span>
+                        </div>
+                  </li>
+
+            </ul>
+
+            </div>
+
+            <div class="data">
+
+            <div class="contact">
+                  <span>Contact</span>
+            </div>
+
+            <div class="tag">
+                  <span>You're not lucky, <br> You worth it</span>
+            </div>
+
+            <div class="year">2019</div>
+
+            <div class="arrow-left">
+                  <i class="fa fa-arrow-left"></i>
+            </div>
+
+            <div class="arrow-right">
+                  <i class="fa fa-arrow-right"></i>
+            </div>
+
+            <div class="add">
+                  <i class="fa fa-plus"></i>
+            </div>
+
+            </div>
+
+            <div class="img">
+                  <img src="hero.jpg" alt="">
+            </div>
+
+            <div class="title">
+                  <span>regel<br>black</span>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="e-shop">
+                  <span>E-shop</span>
+            </div>
+
+            <div class="tag-line">
+                  <span>Discover products</span>
+            </div>
+
+            <div class="media">
+                  <ul>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-instagram"></i></li>
+                        <li><i class="fa fa-twitter"></i></li>
+                  </ul>
+            </div>
+
+      </div>
+
+      <script type="text/javascript">
+
+      TweenMax.from(".account", 1.6, {
+            delay: 0.8,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".logo", 1.6, {
+            delay: 1,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".search", 1.4, {
+            delay: 1.2,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".menu-btn", 1.4, {
+            delay: 1.4,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".contact", 1.4, {
+            delay: 1,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".tag", 1.4, {
+            delay: 1,
+            opacity: 0,
+            y: -40,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".e-shop", 2, {
+            delay: 1.6,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".year", 2, {
+            delay: 1.6,
+            opacity: 0,
+            x: -40,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".add", 2, {
+            delay: 1,
+            opacity: 0,
+            x: -40,
+            rotation: 90,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".arrow-left", 2, {
+            delay: 2.8,
+            opacity: 0,
+            x: 40,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".arrow-right", 2, {
+            delay: 2.8,
+            opacity: 0,
+            x: -40,
+            ease: Expo.easeInOut
+      });
+
+
+      TweenMax.from(".line", 2, {
+            delay: 2.8,
+            opacity: 0,
+            x: -30,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.staggerFrom(".media ul li", 2, {
+            delay: 2.8,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      }, 0.2);
+
+      </script>
+</body>
+</html>
